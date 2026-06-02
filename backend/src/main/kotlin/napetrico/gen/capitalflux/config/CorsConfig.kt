@@ -9,7 +9,7 @@ class CorsConfig : WebMvcConfigurer {
 
     override fun addCorsMappings(registry: CorsRegistry) {
         registry.addMapping("/api/**")
-            .allowedOrigins("http://localhost:5173")
+            .allowedOrigins("https://capitalfluxfin.vercel.app/", "http://localhost:5173")
             .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH")
     }
 }
