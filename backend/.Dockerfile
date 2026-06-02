@@ -1,5 +1,5 @@
 # Build stage
-FROM gradle:8-eclipse-temurin-21 AS build
+FROM gradle:jdk21 AS build
 WORKDIR /app
 COPY build.gradle.kts .
 COPY settings.gradle.kts .
